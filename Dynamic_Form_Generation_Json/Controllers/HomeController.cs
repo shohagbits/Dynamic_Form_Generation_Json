@@ -79,7 +79,6 @@ namespace Dynamic_Form_Generation_Json.Controllers
 
                     if (dropDownItemCount == 0)
                     {
-                        inputType = String.Empty;
                         foreach (var type in dataTypesList)
                         {
                             var typeOfField = descriptionArray.FirstOrDefault(a => !String.IsNullOrWhiteSpace(a) && a.ToUpper().Contains(type.Type));
@@ -90,7 +89,6 @@ namespace Dynamic_Form_Generation_Json.Controllers
                             }
                         }
                     }
-
                     else if (dropDownItemCount > 0)
                     {
                         appendDropdownItemCount++;
