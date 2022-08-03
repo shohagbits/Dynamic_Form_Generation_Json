@@ -29,7 +29,9 @@ namespace Dynamic_Form_Generation_Json.Controllers
             {
                 readJsonData = r.ReadToEnd();
             }
-            FormGeneration fields = JsonConvert.DeserializeObject<FormGeneration>(readJsonData);
+            Root fields = JsonConvert.DeserializeObject<Root>(readJsonData);
+            //FormGeneration fields = JsonConvert.DeserializeObject<FormGeneration>(readJsonData);
+
             #region FormGeneration
             //var model = new FormGeneration()
             //{
@@ -47,7 +49,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
 
             #endregion
 
-            var recordsTemplates = fields.RECORDSET.GETDELIVERYOPTIONTEMPLATE.OrderBy(a => a.T_INDEX).ToList();
+            var recordsTemplates = fields.Envelope.Body.EspDasReply.MTML.REPLY.DATA_CONTEXT.RECORDSET.GETDELIVERYOPTIONTEMPLATE.OrderBy(a => a.T_INDEX).ToList();
 
             var dataTypesList = DataTypeService.GetDataTypes();
             int dropDownItemCount = 0;
