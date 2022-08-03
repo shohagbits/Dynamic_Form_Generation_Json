@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic_Form_Generation_Json", "Dynamic_Form_Generation_Json\Dynamic_Form_Generation_Json.csproj", "{09DC147D-C53B-4225-9E1B-3042077821D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DC147D-C53B-4225-9E1B-3042077821D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DC147D-C53B-4225-9E1B-3042077821D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DC147D-C53B-4225-9E1B-3042077821D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DC147D-C53B-4225-9E1B-3042077821D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E131559C-12E7-4568-951A-CA6AF646C1B5}
+	EndGlobalSection
+EndGlobal
