@@ -25,7 +25,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
         public IActionResult Index()
         {
             var readJsonData = String.Empty;
-            using (StreamReader r = new StreamReader("./Data/jsonData_Test.json"))
+            using (StreamReader r = new StreamReader("./Data/FinalData.json"))
             {
                 readJsonData = r.ReadToEnd();
             }
@@ -76,6 +76,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
                     var option = String.Empty;
 
                     if (dropDownItemCount == 0)
+                    {
+                        inputType = String.Empty;
                         foreach (var type in dataTypesList)
                         {
                             var typeOfField = descriptionArray.FirstOrDefault(a => !String.IsNullOrWhiteSpace(a) && a.ToUpper().Contains(type.Type));
@@ -85,6 +87,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                 break;
                             }
                         }
+                    }
+
                     else if (dropDownItemCount > 0)
                     {
                         appendDropdownItemCount++;
@@ -103,11 +107,25 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                                                 </select>
                                                             </div>
                                                         </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString());
-                            aDynamicFormDesign.AppendFormat(dropdownDesign.ToString());
+                            aDynamicFormDesign.AppendFormat(dropdownDesign);
+                            dropDownItemCount = 0;
+                            appendDropdownItemCount = 0;
+                            dropdownOptionList = new StringBuilder();
+                            dropdownDesign = String.Empty;
                         }
                     }
 
-                    if (!String.IsNullOrWhiteSpace(inputType) && inputType != "doropdown")
+                    if (!String.IsNullOrWhiteSpace(inputType) && inputType == "upperstring" && appendDropdownItemCount == 0)
+                    {
+                        singlePropertyDesign = String.Format(@"<div class='form-group row'>
+                                                            <label for='{1}' class='col-sm-2 col-form-label'>{0}</label>
+                                                            <div class='col-sm-10'>
+                                                                <input type='{2}' class='form-control text-uppercase' id='{1}' name='{1}' placeholder='{3}' >
+                                                            </div>
+                                                        </div>", descriptionArray[1], descriptionArray[0], "text", placeholder);
+                        aDynamicFormDesign.AppendFormat(singlePropertyDesign);
+                    }
+                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType != "doropdown" && appendDropdownItemCount == 0)
                     {
                         singlePropertyDesign = String.Format(@"<div class='form-group row'>
                                                             <label for='{1}' class='col-sm-2 col-form-label'>{0}</label>
@@ -117,21 +135,14 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                                         </div>", descriptionArray[1], descriptionArray[0], inputType, placeholder);
                         aDynamicFormDesign.AppendFormat(singlePropertyDesign);
                     }
-                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType == "doropdown")
+                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType == "doropdown" && appendDropdownItemCount == 0)
                     {
-                        var lastValue = descriptionArray.Last();
-                        if (!String.IsNullOrWhiteSpace(lastValue))
-                            dropDownItemCount = Int32.Parse(descriptionArray.Last());
-                        else
-                        {
-                            int count = descriptionArray.Length - 2;
-                            dropDownItemCount = Int32.Parse(descriptionArray[count]);
-                        }
+                        int count = descriptionArray.Length - 2;
+                        dropDownItemCount = Int32.Parse(descriptionArray[count]);
 
                         dropdownLabel = descriptionArray[1];
                         dropdownId = descriptionArray[0];
                     }
-
                 }
             }
             ViewBag.FormDesignFields = aDynamicFormDesign.ToString();

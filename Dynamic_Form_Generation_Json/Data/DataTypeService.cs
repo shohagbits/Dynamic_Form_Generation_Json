@@ -12,6 +12,7 @@ namespace Dynamic_Form_Generation_Json.Data
         {
             return new List<FieldDataType>()
             {
+                new FieldDataType(){ Type="UPRSTRING"},
                 new FieldDataType(){ Type="ALPHANUM"},
                 new FieldDataType(){ Type="COMBO"},
                 new FieldDataType(){ Type="DIGIT"},
@@ -23,7 +24,9 @@ namespace Dynamic_Form_Generation_Json.Data
             switch (inputType)
             {
                 case "ALPHANUM":
-                    return "text";
+                    return "text";  
+                case "UPRSTRING":
+                    return "upperstring";
                 case "DIGIT":
                     return "number";
                 case "COMBO":

@@ -24,6 +24,9 @@
         $(document).ready(function() {
             $('#buttonSubmit').click(function() {
                 var formData = new FormData($('#dynamicFormId')[0]);
+
+                /*
+
                 var object = {};
                 formData.forEach((value, key) => object[key] = value);
                 var json = JSON.stringify(object);
@@ -31,8 +34,9 @@
 
                 var model = $("#dynamicFormId").serialize();
                 console.log(model);
-
                 debugger;
+
+                */
 
                 $.ajax({
                     type: 'POST',
