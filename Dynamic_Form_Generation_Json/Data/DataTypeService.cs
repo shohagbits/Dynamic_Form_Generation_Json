@@ -14,12 +14,13 @@ namespace Dynamic_Form_Generation_Json.Data
             {
                 new FieldDataType(){ Type="ALPHANUM"},
                 new FieldDataType(){ Type="COMBO"},
-                new FieldDataType(){ Type="DIGIT"}
+                new FieldDataType(){ Type="DIGIT"},
             };
         }
         public static string GetHtmlInputType(string type)
         {
-            switch (type)
+            var inputType=type.Trim();
+            switch (inputType)
             {
                 case "ALPHANUM":
                     return "text";

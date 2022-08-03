@@ -16,6 +16,24 @@
       {
         "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
         "CATEGORY": "USAEPT",
+        "T_INDEX": 4,
+        "DESCRIPTION": "receiver.bank_account.account_type;Account Type; 20; 1233; ; 0; COMBO; NL; ; ; ; 2;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 5,
+        "DESCRIPTION": "1; 0; 22; Checking;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 6,
+        "DESCRIPTION": "1; 0; 32; Savings;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
         "T_INDEX": 63,
         "DESCRIPTION": "receiver.mobile_phone.phone_number.national_number;Receiver Phone Number; 10; 1479; Receiver Phone required; 0; DIGIT; NL; 10;"
       }
