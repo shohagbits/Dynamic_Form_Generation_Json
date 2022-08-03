@@ -1,4 +1,5 @@
-﻿using Dynamic_Form_Generation_Json.Models;
+﻿using Dynamic_Form_Generation_Json.Data;
+using Dynamic_Form_Generation_Json.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -36,6 +37,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
             var serializeData = JsonSerializer.Serialize(model);
             FormGeneration myDeserializedClass = JsonSerializer.Deserialize<FormGeneration>(serializeData);
             var recordsTemplates = myDeserializedClass.RECORDSET.GETDELIVERYOPTIONTEMPLATE.OrderBy(a => a.T_INDEX).ToList();
+
+            var dataTypesList = DataTypeService.GetDataType();
 
             StringBuilder aDynamicFormDesign = new StringBuilder();
             for (int i = 0; i < recordsTemplates.Count; i++)
