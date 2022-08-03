@@ -1,0 +1,396 @@
+{
+  "RECORDSET": {
+    "GETDELIVERYOPTIONTEMPLATE": [
+      {
+        "PRODUCT": "DLVSVCS_UNIVERSAL H2H",
+        "CATEGORY": 4000,
+        "T_INDEX": 0,
+        "DESCRIPTION": "0; ; 0; ; ;EPT ; 0;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 0,
+        "DESCRIPTION": "63; EARTHPORT US/USD D2B; ; ; 63; ; 63; ,;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 1,
+        "DESCRIPTION": "receiver.bank_account.name;Bank Name; 20; 1234; Bank Name required; 0; UPRSTRING; NL; 20;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 2,
+        "DESCRIPTION": "receiver.bank_account.routing_number;ABA Routing Number; 9; 1231; ABA Routing Number required; 0; ALPHANUM; NL; 9;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 3,
+        "DESCRIPTION": "receiver.bank_account.account_number;Account Number; 17; 1232; Account Number required; 0; ALPHANUM; NL; 17;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 4,
+        "DESCRIPTION": "receiver.bank_account.account_type;Account Type; 20; 1233; ; 0; COMBO; NL; ; ; ; 2;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 5,
+        "DESCRIPTION": "1; 0; 22; Checking;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 6,
+        "DESCRIPTION": "1; 0; 32; Savings;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 7,
+        "DESCRIPTION": "receiver.address.addr_line1;Address; 40; 1021; Address required; 0; UPRSTRING; NL; 40;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 8,
+        "DESCRIPTION": "receiver.address.city;Receiver City; 24; 1023; Receiver City required; 0; UPRSTRING; NL; 24;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 9,
+        "DESCRIPTION": "receiver.address.state;State; 50; 1024; State required; 0; COMBO; NL; ; ; ; 50;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 10,
+        "DESCRIPTION": "1; 0; AL; Alabama;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 11,
+        "DESCRIPTION": "1; 0; AK; Alaska;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 12,
+        "DESCRIPTION": "1; 0; AZ; Arizona;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 13,
+        "DESCRIPTION": "1; 0; AR; Arkansas;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 14,
+        "DESCRIPTION": "1; 0; CA; California;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 15,
+        "DESCRIPTION": "1; 0; CO; Colorado;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 16,
+        "DESCRIPTION": "1; 0; CT; Connecticut;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 17,
+        "DESCRIPTION": "1; 0; DE; Delaware;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 18,
+        "DESCRIPTION": "1; 0; FL; Florida;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 19,
+        "DESCRIPTION": "1; 0; GA; Georgia;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 20,
+        "DESCRIPTION": "1; 0; HI; Hawaii;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 21,
+        "DESCRIPTION": "1; 0; ID; Idaho;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 22,
+        "DESCRIPTION": "1; 0; IL; Illinois;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 23,
+        "DESCRIPTION": "1; 0; IN; Indiana;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 24,
+        "DESCRIPTION": "1; 0; IA; Iowa;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 25,
+        "DESCRIPTION": "1; 0; KS; Kansas;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 26,
+        "DESCRIPTION": "1; 0; KY; Kentucky;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 27,
+        "DESCRIPTION": "1; 0; LA; Louisiana;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 28,
+        "DESCRIPTION": "1; 0; ME; Maine;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 29,
+        "DESCRIPTION": "1; 0; MD; Maryland;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 30,
+        "DESCRIPTION": "1; 0; MA; Massachusetts;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 31,
+        "DESCRIPTION": "1; 0; MI; Michigan;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 32,
+        "DESCRIPTION": "1; 0; MN; Minnesota;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 33,
+        "DESCRIPTION": "1; 0; MS; Mississippi;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 34,
+        "DESCRIPTION": "1; 0; MO; Missouri;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 35,
+        "DESCRIPTION": "1; 0; MT; Montana;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 36,
+        "DESCRIPTION": "1; 0; NE; Nebraska;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 37,
+        "DESCRIPTION": "1; 0; NV; Nevada;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 38,
+        "DESCRIPTION": "1; 0; NH; New Hampshire;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 39,
+        "DESCRIPTION": "1; 0; NJ; New Jersey;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 40,
+        "DESCRIPTION": "1; 0; NM; New Mexico;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 41,
+        "DESCRIPTION": "1; 0; NY; New York;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 42,
+        "DESCRIPTION": "1; 0; NC; North Carolina;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 43,
+        "DESCRIPTION": "1; 0; ND; North Dakota;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 44,
+        "DESCRIPTION": "1; 0; OH; Ohio;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 45,
+        "DESCRIPTION": "1; 0; OK; Oklahoma;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 46,
+        "DESCRIPTION": "1; 0; OR; Oregon;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 47,
+        "DESCRIPTION": "1; 0; PA; Pennsylvania;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 48,
+        "DESCRIPTION": "1; 0; RI; Rhode Island;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 49,
+        "DESCRIPTION": "1; 0; SC; South Carolina;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 50,
+        "DESCRIPTION": "1; 0; SD; South Dakota;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 51,
+        "DESCRIPTION": "1; 0; TN; Tennessee;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 52,
+        "DESCRIPTION": "1; 0; TX; Texas;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 53,
+        "DESCRIPTION": "1; 0; UT; Utah;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 54,
+        "DESCRIPTION": "1; 0; VT; Vermont;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 55,
+        "DESCRIPTION": "1; 0; VA; Virginia;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 56,
+        "DESCRIPTION": "1; 0; WA; Washington;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 57,
+        "DESCRIPTION": "1; 0; WV; West Virginia;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 58,
+        "DESCRIPTION": "1; 0; WI; Wisconsin;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 59,
+        "DESCRIPTION": "1; 0; WY; Wyoming;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 60,
+        "DESCRIPTION": "receiver.address.postal_code;ZIP Code; 9; 1025; ZIP Code required; 0; DIGIT; NL; ; ; ;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 61,
+        "DESCRIPTION": "receiver.mobile_phone.phone_number.country_code;Receiver Country Code; 1; 1478; Receiver Country Code required; 0; COMBO; NL; ; ; ; 1;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 62,
+        "DESCRIPTION": "1; 0; 1; United States (+1);"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 63,
+        "DESCRIPTION": "receiver.mobile_phone.phone_number.national_number;Receiver Phone Number; 10; 1479; Receiver Phone required; 0; DIGIT; NL; 10;"
+      }
+    ]
+  }
+}

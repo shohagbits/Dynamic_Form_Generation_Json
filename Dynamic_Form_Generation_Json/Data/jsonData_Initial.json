@@ -1,0 +1,24 @@
+{
+  "RECORDSET": {
+    "GETDELIVERYOPTIONTEMPLATE": [
+      {
+        "PRODUCT": "DLVSVCS_UNIVERSAL H2H",
+        "CATEGORY": 4000,
+        "T_INDEX": 0,
+        "DESCRIPTION": "0; ; 0; ; ;EPT ; 0;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 2,
+        "DESCRIPTION": "receiver.bank_account.routing_number;ABA Routing Number; 9; 1231; ABA Routing Number required; 0; ALPHANUM; NL; 9;"
+      },
+      {
+        "PRODUCT": "UNIVERSAL ADDRESS DLV H2H",
+        "CATEGORY": "USAEPT",
+        "T_INDEX": 63,
+        "DESCRIPTION": "receiver.mobile_phone.phone_number.national_number;Receiver Phone Number; 10; 1479; Receiver Phone required; 0; DIGIT; NL; 10;"
+      }
+    ]
+  }
+}

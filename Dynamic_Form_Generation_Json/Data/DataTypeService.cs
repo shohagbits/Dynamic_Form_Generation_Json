@@ -2,16 +2,33 @@
 
 namespace Dynamic_Form_Generation_Json.Data
 {
-    public class DataTypeService
+    public class FieldDataType
     {
         public string Type { get; set; }
-        public static List<DataTypeService> GetDataType()
+    }
+    public class DataTypeService
+    {
+        public static List<FieldDataType> GetDataTypes()
         {
-            return new List<DataTypeService>()
+            return new List<FieldDataType>()
             {
-                new DataTypeService(){ Type="ALPHANUM"},
-                new DataTypeService(){ Type="COMBO"},
-                new DataTypeService(){ Type="DIGIT"}
+                new FieldDataType(){ Type="ALPHANUM"},
+                new FieldDataType(){ Type="COMBO"},
+                new FieldDataType(){ Type="DIGIT"}
+            };
+        }
+        public static string GetHtmlInputType(string type)
+        {
+            switch (type)
+            {
+                case "ALPHANUM":
+                    return "text";
+                case "DIGIT":
+                    return "number";
+                case "COMBO":
+                    return "doropdown";
+                default:
+                    return "text";
             };
         }
     }

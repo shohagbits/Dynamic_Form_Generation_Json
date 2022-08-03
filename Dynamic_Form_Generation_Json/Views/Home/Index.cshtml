@@ -4,8 +4,8 @@
 <hr />
 <div class='row'>
     <div class='col-md-4'>
-        <form method='post' asp-action='Index' asp-controller='Home' id='dynamicFormId'>
-            <div asp-validation-summary='ModelOnly' class='text-danger'></div>
+        <form id='dynamicFormId'>
+            @*<div asp-validation-summary='ModelOnly' class='text-danger'></div>*@
 
             @Html.Raw(ViewBag.FormDesignFields)
 
@@ -24,8 +24,28 @@
         $(document).ready(function() {
             $('#buttonSubmit').click(function() {
                 var formData = new FormData($('#dynamicFormId')[0]);
-                console.log(formData);
-                alert('Test');
+                var object = {};
+                formData.forEach((value, key) => object[key] = value);
+                var json = JSON.stringify(object);
+                console.log(json);
+
+                var model = $("#dynamicFormId").serialize();
+                console.log(model);
+
+                debugger;
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'JSON',
+                    url: '/Home/DynamicForm',
+                    data: { formData: model },
+                    success: function(response) {
+                        console.log(response);
+                    },
+                    error: function(response) {
+                        alert("Error: " + response);
+                    }
+                });
             });
         });
     </script>
