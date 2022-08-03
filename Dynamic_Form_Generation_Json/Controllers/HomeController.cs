@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -34,7 +35,25 @@ namespace Dynamic_Form_Generation_Json.Controllers
             };
             var serializeData = JsonSerializer.Serialize(model);
             FormGeneration myDeserializedClass = JsonSerializer.Deserialize<FormGeneration>(serializeData);
+            var recordsTemplates = myDeserializedClass.RECORDSET.GETDELIVERYOPTIONTEMPLATE.OrderBy(a => a.T_INDEX).ToList();
 
+            StringBuilder aDynamicFormDesign = new StringBuilder();
+            for (int i = 0; i < recordsTemplates.Count; i++)
+            {
+                var product = recordsTemplates[i].PRODUCT;
+                var category = recordsTemplates[i].CATEGORY;
+                var t_index = recordsTemplates[i].T_INDEX;
+                var description = recordsTemplates[i].DESCRIPTION;
+
+                var singlePropertyDesign = String.Format(@"<div class='form-group row'>
+                                                            <label for='' class='col-sm-2 col-form-label'>{0}</label>
+                                                            <div class='col-sm-10'>
+                                                                <input type='text' class='form-control' id='' placeholder='{1}'>
+                                                            </div>
+                                                        </div>", product, category);
+                aDynamicFormDesign.AppendFormat(singlePropertyDesign);
+            }
+            ViewBag.FormDesignFields = aDynamicFormDesign.ToString();
             return View();
         }
 
