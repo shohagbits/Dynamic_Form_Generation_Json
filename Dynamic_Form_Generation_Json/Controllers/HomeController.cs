@@ -72,7 +72,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                 {
                     var labelText = descriptionArray[1];
                     var inputId = descriptionArray[0];
-                    var isRequired = descriptionArray[4].Contains("required")? "required" : "";
+                    var isRequired = descriptionArray[4].Contains("required") ? "required" : "";
 
                     var inputType = String.Empty;
                     var placeholder = String.Empty;
@@ -160,6 +160,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
         {
             return View();
         }
+
         public IActionResult Privacy()
         {
             return View();
