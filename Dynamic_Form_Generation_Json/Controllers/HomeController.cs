@@ -57,6 +57,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
             var dropdownLabel = String.Empty;
             var dropdownId = String.Empty;
             var dropdownDesign = String.Empty;
+            var maxSizeLength = String.Empty;
 
             StringBuilder aDynamicFormDesign = new StringBuilder();
             StringBuilder dropdownOptionList = new StringBuilder();
@@ -71,6 +72,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
                 {
                     var labelText = descriptionArray[1];
                     var inputId = descriptionArray[0];
+                    var isRequired = descriptionArray[4].Contains("required")? "required" : "";
+
                     var inputType = String.Empty;
                     var placeholder = String.Empty;
 
@@ -99,14 +102,14 @@ namespace Dynamic_Form_Generation_Json.Controllers
                         if (dropDownItemCount == appendDropdownItemCount)
                         {
                             dropdownDesign = String.Format(@"<div class='form-group row'>
-                                                            <label for='{1}' class='col-sm-2 col-form-label'>{0}</label>
+                                                            <label for='{1}' class='col-sm-2 col-form-label {3}'>{0}</label>
                                                             <div class='col-sm-10'>
-                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example'>
+                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example' {3}>
                                                                     <option selected>--Select--</option>
                                                                     {2}
                                                                 </select>
                                                             </div>
-                                                        </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString());
+                                                        </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired);
                             aDynamicFormDesign.AppendFormat(dropdownDesign);
                             dropDownItemCount = 0;
                             appendDropdownItemCount = 0;
@@ -117,22 +120,25 @@ namespace Dynamic_Form_Generation_Json.Controllers
 
                     if (!String.IsNullOrWhiteSpace(inputType) && inputType == "upperstring" && appendDropdownItemCount == 0)
                     {
+                        maxSizeLength = descriptionArray[2];
                         singlePropertyDesign = String.Format(@"<div class='form-group row'>
-                                                            <label for='{1}' class='col-sm-2 col-form-label'>{0}</label>
+                                                            <label for='{1}' class='col-sm-2 col-form-label {5}'>{0}</label>
                                                             <div class='col-sm-10'>
-                                                                <input type='{2}' class='form-control text-uppercase' id='{1}' name='{1}' placeholder='{3}' >
+                                                                <input type='{2}' class='form-control text-uppercase' id='{1}' name='{1}' placeholder='{3}' maxlength='{4}' {5} >
                                                             </div>
-                                                        </div>", descriptionArray[1], descriptionArray[0], "text", placeholder);
+                                                        </div>", descriptionArray[1], descriptionArray[0], "text", placeholder, maxSizeLength, isRequired);
                         aDynamicFormDesign.AppendFormat(singlePropertyDesign);
                     }
                     else if (!String.IsNullOrWhiteSpace(inputType) && inputType != "doropdown" && appendDropdownItemCount == 0)
                     {
+                        maxSizeLength = descriptionArray[2];
+
                         singlePropertyDesign = String.Format(@"<div class='form-group row'>
-                                                            <label for='{1}' class='col-sm-2 col-form-label'>{0}</label>
+                                                            <label for='{1}' class='col-sm-2 col-form-label {5}'>{0}</label>
                                                             <div class='col-sm-10'>
-                                                                <input type='{2}' class='form-control' id='{1}' name='{1}' placeholder='{3}'>
+                                                                <input type='{2}' class='form-control' id='{1}' name='{1}' placeholder='{3}' maxlength='{4}' {5}>
                                                             </div>
-                                                        </div>", descriptionArray[1], descriptionArray[0], inputType, placeholder);
+                                                        </div>", descriptionArray[1], descriptionArray[0], inputType, placeholder, maxSizeLength, isRequired);
                         aDynamicFormDesign.AppendFormat(singlePropertyDesign);
                     }
                     else if (!String.IsNullOrWhiteSpace(inputType) && inputType == "doropdown" && appendDropdownItemCount == 0)

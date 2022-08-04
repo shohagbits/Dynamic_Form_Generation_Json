@@ -1,9 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+<style>
+    .required:after {
+        content: " *";
+        color: red;
+    }
+</style>
+
 <hr />
 <div class='row'>
-    <div class='col-md-4'>
+    <div class='col-md-8'>
         <form id='dynamicFormId'>
             @*<div asp-validation-summary='ModelOnly' class='text-danger'></div>*@
 
@@ -23,18 +30,23 @@
     <script>
         $(document).ready(function() {
             $('#buttonSubmit').click(function() {
-                var formData = new FormData($('#dynamicFormId')[0]);
-
-                /*
-
-                var object = {};
-                formData.forEach((value, key) => object[key] = value);
-                var json = JSON.stringify(object);
-                console.log(json);
 
                 var model = $("#dynamicFormId").serialize();
                 console.log(model);
                 debugger;
+
+                /*
+
+                    var model = new FormData($('#dynamicFormId')[0]);
+
+                    var object = {};
+                    formData.forEach((value, key) => object[key] = value);
+                    var model = JSON.stringify(object);
+                    console.log(json);
+
+                    var model = $("#dynamicFormId").serialize();
+                    console.log(model);
+                    debugger;
 
                 */
 
