@@ -25,6 +25,9 @@ namespace Dynamic_Form_Generation_Json.Controllers
         public IActionResult Index()
         {
             var readJsonData = String.Empty;
+
+            //using (StreamReader r = new StreamReader("./Data/Templates/FinalData.json"))
+            //using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-LK-LKR.json"))
             using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-IN-INR.json"))
             {
                 readJsonData = r.ReadToEnd();
@@ -84,7 +87,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                     {
                         foreach (var type in dataTypesList)
                         {
-                            var typeOfField = descriptionArray.Count()>6? descriptionArray[6]:"";
+                            var typeOfField = descriptionArray.Count() > 6 ? descriptionArray[6] : "";
                             if (!String.IsNullOrWhiteSpace(typeOfField))
                             {
                                 inputType = DataTypeService.GetHtmlInputType(descriptionArray[6]);
@@ -99,7 +102,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                         dropdownOptionList.AppendFormat(option);
 
                         //Finally Apped Dropdown Into Form
-                        if (appendDropdownItemCount > 0 && inputType==String.Empty)
+                        if (appendDropdownItemCount == dropDownItemCount)
                         {
                             dropdownDesign = String.Format(@"<div class='form-group row'>
                                                             <label for='{1}' class='col-sm-2 col-form-label {3}'>{0}</label>

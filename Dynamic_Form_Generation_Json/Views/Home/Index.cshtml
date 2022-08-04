@@ -10,7 +10,7 @@
 
 <hr />
 <div class='row'>
-    <div class='col-md-8'>
+    <div class='col-md-12'>
         <form id='dynamicFormId'>
             @*<div asp-validation-summary='ModelOnly' class='text-danger'></div>*@
 
@@ -33,7 +33,19 @@
 
                 var model = $("#dynamicFormId").serialize();
                 console.log(model);
-                debugger;
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'JSON',
+                    url: '/Home/DynamicForm',
+                    data: { formData: model },
+                    success: function(response) {
+                        console.log(response);
+                    },
+                    error: function(response) {
+                        alert("Error: " + response);
+                    }
+                });
 
                 /*
 
@@ -48,20 +60,22 @@
                     console.log(model);
                     debugger;
 
+                    $.ajax({
+                        type: 'POST',
+                        dataType: 'JSON',
+                        url: '/Home/DynamicForm',
+                        data: { formData: model },
+                        success: function(response) {
+                            console.log(response);
+                        },
+                        error: function(response) {
+                            alert("Error: " + response);
+                        }
+                    });
+
                 */
 
-                $.ajax({
-                    type: 'POST',
-                    dataType: 'JSON',
-                    url: '/Home/DynamicForm',
-                    data: { formData: model },
-                    success: function(response) {
-                        console.log(response);
-                    },
-                    error: function(response) {
-                        alert("Error: " + response);
-                    }
-                });
+              
             });
         });
     </script>
