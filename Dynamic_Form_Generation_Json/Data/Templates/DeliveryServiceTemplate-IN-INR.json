@@ -1,0 +1,1115 @@
+{
+  "Envelope": {
+    "Body": {
+      "esp-das-reply": {
+        "partner": {
+          "id": "WGBSBDL590T",
+          "system": {
+            "id": "WGBSBDL590T",
+            "name": "BRAAC",
+            "version": 9101,
+            "ip_address": "172.31.19.212",
+            "connector": {
+              "id": "BDL59WAL001A"
+            }
+          }
+        },
+        "device": {
+          "id": "BL",
+          "type": "WALLET"
+        },
+        "external_reference_no": "abc123",
+        "MTML": {
+          "REPLY": {
+            "DATA_CONTEXT": {
+              "HEADER": {
+                "ACCOUNT_NUM": "ABD910042",
+                "DATA_MORE": "Y",
+                "DATA_NUM_RECS": 159,
+                "NAME": "GetDeliveryOptionTemplate"
+              },
+              "RECORDSET": {
+                "GETDELIVERYOPTIONTEMPLATE": [
+                  {
+                    "PRODUCT": "DLVSVCS_UNIVERSAL              H2H",
+                    "CATEGORY": 4020,
+                    "T_INDEX": 0,
+                    "DESCRIPTION": "0; ; 0; ; ;EPT ; 0;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 0,
+                    "DESCRIPTION": "177; EARTHPORT IN/INR D2B; ; ; 177; ; 177; 09:30:00Z,0;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 1,
+                    "DESCRIPTION": "receiver.bank_account.name;Bank Name; 35; 1234; Bank Name required; 0; COMBO; NL; ; ; ; 168;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 2,
+                    "DESCRIPTION": "1; 0; IDFB; IDFC Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 3,
+                    "DESCRIPTION": "1; 0; SBIN; State Bank of India;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 4,
+                    "DESCRIPTION": "1; 0; ICIC; ICICI Bank Ltd.;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 5,
+                    "DESCRIPTION": "1; 0; HDFC; HDFC Bank Ltd.;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 6,
+                    "DESCRIPTION": "1; 0; UTIB; Axis Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 7,
+                    "DESCRIPTION": "1; 0; BNSB; BHAGINI NIVEDITA SAHAKARI BANK LTD PUNE;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 8,
+                    "DESCRIPTION": "1; 0; DMKJ; DMK JAOLI BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 9,
+                    "DESCRIPTION": "1; 0; DOHB; DOHA BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 10,
+                    "DESCRIPTION": "1; 0; DURG; DURGAPUR STEEL PEOPLES CO-OPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 11,
+                    "DESCRIPTION": "1; 0; EBIL; EMIRATES NBD BANK P J S C;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 12,
+                    "DESCRIPTION": "1; 0; EIBI; EXPORT IMPORT BANK OF INDIA;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 13,
+                    "DESCRIPTION": "1; 0; ESMF; ESAF SMALL FINANCE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 14,
+                    "DESCRIPTION": "1; 0; FINO; FINO PAYMENTS BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 15,
+                    "DESCRIPTION": "1; 0; FSFB; FINCARE SMALL FINANCE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 16,
+                    "DESCRIPTION": "1; 0; HARC; HARYANA STATE COOPERATIVE BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 17,
+                    "DESCRIPTION": "1; 0; IBKO; INDUSTRIAL BANK OF KOREA;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 18,
+                    "DESCRIPTION": "1; 0; IPOS; INDIA POST PAYMENT BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 19,
+                    "DESCRIPTION": "1; 0; JIOP; JIO PAYMENTS BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 20,
+                    "DESCRIPTION": "1; 0; JSFB; JANA SMALL FINANCE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 21,
+                    "DESCRIPTION": "1; 0; KDCB; KOZHIKODE DISTRICT COOPERATIAVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 22,
+                    "DESCRIPTION": "1; 0; KLGB; KERALA GRAMIN BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 23,
+                    "DESCRIPTION": "1; 0; KOEX; KEB Hana Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 24,
+                    "DESCRIPTION": "1; 0; KRTH; KRUNG THAI BANK PCL;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 25,
+                    "DESCRIPTION": "1; 0; NBRD; NATIONAL BANK FOR AGRICULTURE AND RURAL DEVELOPMENT;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 26,
+                    "DESCRIPTION": "1; 0; NESF; NORTH EAST SMALL FINANCE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 27,
+                    "DESCRIPTION": "1; 0; PKGB; PRAGATHI KRISHNA GRAMIN BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 28,
+                    "DESCRIPTION": "1; 0; PYTM; PAYTM PAYMENTS BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 29,
+                    "DESCRIPTION": "1; 0; QNBA; QATAR NATIONAL BANK SAQ;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 30,
+                    "DESCRIPTION": "1; 0; RRBP; RAJARAMBAPU SAHAKARI BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 31,
+                    "DESCRIPTION": "1; 0; SIDB; SMALL INDUSTRIES DEVELOPMENT BANK OF INDIA;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 32,
+                    "DESCRIPTION": "1; 0; SIDC; THE SINDHUDURG DISTRICT CENTRAL COOP BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 33,
+                    "DESCRIPTION": "1; 0; SURY; SURYODAY SMALL FINANCE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 34,
+                    "DESCRIPTION": "1; 0; THRS; THRISSUR DISTRICT CO-OPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 35,
+                    "DESCRIPTION": "1; 0; TTCB; TEXTILE TRADERS CO OPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 36,
+                    "DESCRIPTION": "1; 0; UTKS; UTKARSH SMALL FINANCE BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 37,
+                    "DESCRIPTION": "1; 0; VASJ; VASAI JANATA SAHAKARI BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 38,
+                    "DESCRIPTION": "1; 0; ZCBL; THE ZOROASTRIAN COOPERATIVE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 39,
+                    "DESCRIPTION": "1; 0; ZSBL; ZILA SAHAKRI BANK LIMITED GHAZIABAD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 40,
+                    "DESCRIPTION": "1; 0; BARA; THE BARAMATI SAHAKARI BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 41,
+                    "DESCRIPTION": "1; 0; NBAD; FIRST ABU DHABI BANK PJSC;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 42,
+                    "DESCRIPTION": "1; 0; AUBL; AU SMALL FINANCE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 43,
+                    "DESCRIPTION": "1; 0; APGV; ANDHRA PRADESH GRAMEENA VIKAS BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 44,
+                    "DESCRIPTION": "1; 0; AJHC; AMBARNATH JAIHIND COOP BANK LTD AMBARNATH;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 45,
+                    "DESCRIPTION": "1; 0; ABPB; ADITYA BIRLA IDEA PAYMENTS BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 46,
+                    "DESCRIPTION": "1; 0; UJVN; Ujjivan Small Finance Bank Limited;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 47,
+                    "DESCRIPTION": "1; 0; PUCB; PANDHARPUR URBAN CO OP. BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 48,
+                    "DESCRIPTION": "1; 0; NVNM; NAVNIRMAN CO-OPERATIVE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 49,
+                    "DESCRIPTION": "1; 0; HCBL; HASTI COOP BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 50,
+                    "DESCRIPTION": "1; 0; TSAB; TELANGANA STATE COOP APEX BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 51,
+                    "DESCRIPTION": "1; 0; SUNB; SURAT NATIONAL COOPERATIVE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 52,
+                    "DESCRIPTION": "1; 0; SMCB; SHIVALIK MERCANTILE CO OPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 53,
+                    "DESCRIPTION": "1; 0; SBLS; SAMARTH SAHAKARI BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 54,
+                    "DESCRIPTION": "1; 0; SKSB; SHIKSHAK SAHAKARI BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 55,
+                    "DESCRIPTION": "1; 0; PUNB; Punjab National Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 56,
+                    "DESCRIPTION": "1; 0; IDUK; IDUKKI DISTRICT CO OPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 57,
+                    "DESCRIPTION": "1; 0; MAHG; Maharashtra Gramin Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 58,
+                    "DESCRIPTION": "1; 0; BARB; Bank of Baroda;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 59,
+                    "DESCRIPTION": "1; 0; ABHY; Abhyudaya Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 60,
+                    "DESCRIPTION": "1; 0; ADCB; Abu Dhabi Commercial Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 61,
+                    "DESCRIPTION": "1; 0; AIRP; Airtel Payments Bank Limited;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 62,
+                    "DESCRIPTION": "1; 0; ADCC; AKOLA DISTRICT CENTRAL COOPERATIVE BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 63,
+                    "DESCRIPTION": "1; 0; DEOB; DEOGIRI NAGARI SAHAKARI BANK LTD. AURANGABAD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 64,
+                    "DESCRIPTION": "1; 0; HPSC; HIMACHAL PRADESH STATE COOPERATIVE BANK LTD;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 65,
+                    "DESCRIPTION": "1; 0; AUCB; Almora Urban Co-operative Bank Ltd.;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 66,
+                    "DESCRIPTION": "1; 0; ESFB; EQUITAS SMALL FINANCE BANK LIMITED;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 67,
+                    "DESCRIPTION": "1; 0; APGB; Andhra Pragathi Grameen Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 68,
+                    "DESCRIPTION": "1; 0; ASBL; Apna Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 69,
+                    "DESCRIPTION": "1; 0; ANZB; Australia &amp; New Zealand Banking Group;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 70,
+                    "DESCRIPTION": "1; 0; BNPA; BNP Paribas Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 71,
+                    "DESCRIPTION": "1; 0; BBKM; Bank of Bahrain &amp; Kuwait;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 72,
+                    "DESCRIPTION": "1; 0; BCEY; Bank of Ceylon;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 73,
+                    "DESCRIPTION": "1; 0; BKID; Bank of India;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 74,
+                    "DESCRIPTION": "1; 0; MAHB; Bank of Maharashtra;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 75,
+                    "DESCRIPTION": "1; 0; BARC; Barclays Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 76,
+                    "DESCRIPTION": "1; 0; BACB; Bassein Catholic Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 77,
+                    "DESCRIPTION": "1; 0; CNRB; Canara Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 78,
+                    "DESCRIPTION": "1; 0; CLBL; Capital Local Area Bank Ltd.;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 79,
+                    "DESCRIPTION": "1; 0; CSBK; Catholic Syrian Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 80,
+                    "DESCRIPTION": "1; 0; CBIN; Central Bank of India;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 81,
+                    "DESCRIPTION": "1; 0; CRUB; Chhatrapati Rajarshishahu Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 82,
+                    "DESCRIPTION": "1; 0; CITI; Citibank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 83,
+                    "DESCRIPTION": "1; 0; CCBL; Citizen Credit Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 84,
+                    "DESCRIPTION": "1; 0; CIUB; City Union Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 85,
+                    "DESCRIPTION": "1; 0; DEUT; Deutsche Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 86,
+                    "DESCRIPTION": "1; 0; DBSS; Development Bank of Singapore;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 87,
+                    "DESCRIPTION": "1; 0; DCBL; Development Credit Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 88,
+                    "DESCRIPTION": "1; 0; DLXB; Dhanalaxmi Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 89,
+                    "DESCRIPTION": "1; 0; DNSB; Dombivli Nagari Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 90,
+                    "DESCRIPTION": "1; 0; FIRN; Firstrand Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 91,
+                    "DESCRIPTION": "1; 0; HSBC; Hong Kong &amp; Shanghai Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 92,
+                    "DESCRIPTION": "1; 0; IBKL; IDBI Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 93,
+                    "DESCRIPTION": "1; 0; IDIB; Indian Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 94,
+                    "DESCRIPTION": "1; 0; IOBA; Indian Overseas Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 95,
+                    "DESCRIPTION": "1; 0; INDB; Indusind Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 96,
+                    "DESCRIPTION": "1; 0; JJSB; Jalgaon Janata Sahakari;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 97,
+                    "DESCRIPTION": "1; 0; JSBP; Janata Sahakari Bank Ltd (Pune);"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 98,
+                    "DESCRIPTION": "1; 0; JSBL; Janakalyan Shakari Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 99,
+                    "DESCRIPTION": "1; 0; JANA; Janaseva Shahkari Bank Ltd. Pune;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 100,
+                    "DESCRIPTION": "1; 0; KAIJ; Kallappanna Awade Ich Janata Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 101,
+                    "DESCRIPTION": "1; 0; KARB; Karnataka Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 102,
+                    "DESCRIPTION": "1; 0; KVGB; Karnataka Vikas Grameena Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 103,
+                    "DESCRIPTION": "1; 0; KVBL; Karur Vysya Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 104,
+                    "DESCRIPTION": "1; 0; KKBK; Kotak Mahindra Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 105,
+                    "DESCRIPTION": "1; 0; KNSB; Kurmanchal Nagar Sahkari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 106,
+                    "DESCRIPTION": "1; 0; MCBL; Mahanagar Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 107,
+                    "DESCRIPTION": "1; 0; MSHQ; Mashreq Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 108,
+                    "DESCRIPTION": "1; 0; MSCI; Maharashtra State Coop Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 109,
+                    "DESCRIPTION": "1; 0; MDCB; Mumbai District Central Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 110,
+                    "DESCRIPTION": "1; 0; NGSB; Nagpur Nagrik Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 111,
+                    "DESCRIPTION": "1; 0; NICB; New India Cooperative Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 112,
+                    "DESCRIPTION": "1; 0; NKGS; NKGSB Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 113,
+                    "DESCRIPTION": "1; 0; NNSB; Nutan Nagarik Sahakari Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 114,
+                    "DESCRIPTION": "1; 0; PJSB; Parsik Janata Sahakari Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 115,
+                    "DESCRIPTION": "1; 0; PRTH; Prathama Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 116,
+                    "DESCRIPTION": "1; 0; PMEC; Prime Co-operative Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 117,
+                    "DESCRIPTION": "1; 0; PMCB; Punjab and Maharashtra Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 118,
+                    "DESCRIPTION": "1; 0; PSIB; Punjab and Sind Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 119,
+                    "DESCRIPTION": "1; 0; RABO; Rabobank International (CCRB);"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 120,
+                    "DESCRIPTION": "1; 0; RNSB; Rajkot Nagarik Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 121,
+                    "DESCRIPTION": "1; 0; SABR; Sberbank of Russia;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 122,
+                    "DESCRIPTION": "1; 0; SHBK; Shinhan Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 123,
+                    "DESCRIPTION": "1; 0; SIBL; South Indian Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 124,
+                    "DESCRIPTION": "1; 0; SCBL; Standard Chartered Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 125,
+                    "DESCRIPTION": "1; 0; STCB; State Bank of Mauritius;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 126,
+                    "DESCRIPTION": "1; 0; TMBL; Tamilnad Mercantile Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 127,
+                    "DESCRIPTION": "1; 0; TBSB; Thane Bharat Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 128,
+                    "DESCRIPTION": "1; 0; APMC; The A.P. Mahesh Co-op Urban Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 129,
+                    "DESCRIPTION": "1; 0; AMCB; AHMEDABAD MERCANTILE COOPERATIVE BANK;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 130,
+                    "DESCRIPTION": "1; 0; APBL; The Andhra Pradesh State Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 131,
+                    "DESCRIPTION": "1; 0; NOSC; The Bank of Nova Scotia;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 132,
+                    "DESCRIPTION": "1; 0; BCBM; The Bharat Co-operative Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 133,
+                    "DESCRIPTION": "1; 0; COSB; The Cosmos Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 134,
+                    "DESCRIPTION": "1; 0; FDRL; The Federal Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 135,
+                    "DESCRIPTION": "1; 0; GDCB; The Gadchiroli Dist Ctl Coop Bk;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 136,
+                    "DESCRIPTION": "1; 0; GBCB; The Greater Bombay Coop Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 137,
+                    "DESCRIPTION": "1; 0; GSCB; The Gujarat State Co-operative Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 138,
+                    "DESCRIPTION": "1; 0; JPCB; The Jalgaon Peoples Co-Op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 139,
+                    "DESCRIPTION": "1; 0; JAKA; The Jammu &amp; Kashmir Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 140,
+                    "DESCRIPTION": "1; 0; KCCB; The Kalupur Commercial Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 141,
+                    "DESCRIPTION": "1; 0; KJSB; The Kalyan Janata Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 142,
+                    "DESCRIPTION": "1; 0; KANG; The Kangra Co-operative Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 143,
+                    "DESCRIPTION": "1; 0; KUCB; The Karad Urban Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 144,
+                    "DESCRIPTION": "1; 0; KSCB; The Karnataka State Co-op Apex Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 145,
+                    "DESCRIPTION": "1; 0; LAVB; The Lakshmi Vilas Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 146,
+                    "DESCRIPTION": "1; 0; MSNU; The Mehsana Urban Co-operative Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 147,
+                    "DESCRIPTION": "1; 0; MUBL; The Municipal Co-operative Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 148,
+                    "DESCRIPTION": "1; 0; NTBL; The Nainital Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 149,
+                    "DESCRIPTION": "1; 0; NMCB; The Nasik Merchants Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 150,
+                    "DESCRIPTION": "1; 0; RSCB; The Rajasthan State Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 151,
+                    "DESCRIPTION": "1; 0; RATN; The Ratnakar Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 152,
+                    "DESCRIPTION": "1; 0; SRCB; The Saraswat Co-operative Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 153,
+                    "DESCRIPTION": "1; 0; SVBL; The Seva Vikas Co-Op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 154,
+                    "DESCRIPTION": "1; 0; SVCB; The Shamrao Vithal Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 155,
+                    "DESCRIPTION": "1; 0; SDCB; The Surat District Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 156,
+                    "DESCRIPTION": "1; 0; SPCB; The Surat People's Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 157,
+                    "DESCRIPTION": "1; 0; SUTB; The Sutex Co-operative Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 158,
+                    "DESCRIPTION": "1; 0; TNSC; The TamilNadu State Apex Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 159,
+                    "DESCRIPTION": "1; 0; TDCB; The Thane District Central Coop Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 160,
+                    "DESCRIPTION": "1; 0; TJSB; The Thane Janata Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 161,
+                    "DESCRIPTION": "1; 0; VARA; The Varachha Co-op Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 162,
+                    "DESCRIPTION": "1; 0; VSBL; The Vishweshwar Sahakari Bank Ltd;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 163,
+                    "DESCRIPTION": "1; 0; WBSC; The West Bengal State Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 164,
+                    "DESCRIPTION": "1; 0; TGMB; Tumkur Grain Merchants Co-op Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 165,
+                    "DESCRIPTION": "1; 0; UCBA; UCO Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 166,
+                    "DESCRIPTION": "1; 0; UBIN; Union Bank of India;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 167,
+                    "DESCRIPTION": "1; 0; VVSB; Vasai Vikas Sahakari Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 168,
+                    "DESCRIPTION": "1; 0; HVBK; Woori Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 169,
+                    "DESCRIPTION": "1; 0; YESB; Yes Bank;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 170,
+                    "DESCRIPTION": "receiver.bank_account.account_number;Account Number; 35; 1232; Account Number required; 0; ALPHANUM; NL; 35;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 171,
+                    "DESCRIPTION": "receiver.bank_account.bank_code;IFSC Code; 11; 1556; IFSC Code required; 0; ALPHANUM; NL; 11;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 172,
+                    "DESCRIPTION": "receiver.reason_for_sending;Purpose of Remittance; 35; 1482; Purpose of Remittance required; 0; COMBO; NL; ; ; ; 2;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 173,
+                    "DESCRIPTION": "1; 0; P101; Credit to NRE Account;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 174,
+                    "DESCRIPTION": "1; 0; P102; Family Maintenance / Savings;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 175,
+                    "DESCRIPTION": "receiver.mobile_phone.phone_number.country_code;Receiver's Mobile Country Code; 2; 1478; ; 0; COMBO; NL; ; ; ; 1;"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 176,
+                    "DESCRIPTION": "1; 0; 91; India (+91);"
+                  },
+                  {
+                    "PRODUCT": "UNIVERSAL ADDRESS DLV          H2H",
+                    "CATEGORY": "INDEPT",
+                    "T_INDEX": 177,
+                    "DESCRIPTION": "receiver.mobile_phone.phone_number.national_number;Receiver's Mobile Number; 13; 1479; ; 0; DIGIT; NL; 13;"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

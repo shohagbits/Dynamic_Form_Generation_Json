@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <xrsi:esp-das-reply xmlns:xrsi="http://www.westernunion.com/schema/xrsi">
+         <partner>
+            <id>WGBSBDL590T</id>
+            <system>
+               <id>WGBSBDL590T</id>
+               <name>BRAAC</name>
+               <version>9101</version>
+               <ip_address>172.31.19.212</ip_address>
+               <connector>
+                  <id>BDL59WAL001A</id>
+               </connector>
+            </system>
+         </partner>
+         <device>
+            <id>BL</id>
+            <type>WALLET</type>
+         </device>
+         <external_reference_no>abc123</external_reference_no>
+         <MTML>
+            <REPLY>
+               <DATA_CONTEXT>
+                  <HEADER>
+                     <ACCOUNT_NUM>ABD910042</ACCOUNT_NUM>
+                     <DATA_MORE>N</DATA_MORE>
+                     <DATA_NUM_RECS>7</DATA_NUM_RECS>
+                     <NAME>GetDeliveryOptionTemplate</NAME>
+                  </HEADER>
+                  <RECORDSET>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>DLVSVCS_UNIVERSAL              H2H</PRODUCT>
+                        <CATEGORY>4040</CATEGORY>
+                        <T_INDEX>000</T_INDEX>
+                        <DESCRIPTION>0; ; 0; ; ;EPT ; 0;</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>000</T_INDEX>
+                        <DESCRIPTION>5; EARTHPORT LK/LKR D2B; ; ; 5; ; 5; 16:00:00Z,0;</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>001</T_INDEX>
+                        <DESCRIPTION>receiver.bank_account.bank_code;Bank Name; 35; 1556; Bank Name required; 0; COMBO2; NL; ; ; ; CMBSRI,1</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>002</T_INDEX>
+                        <DESCRIPTION>receiver.bank_account.branch_code;Branch Name; 35; 1553; Branch Name required; 0; COMBO2; NL; ; ; ; CMBSRI,2</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>003</T_INDEX>
+                        <DESCRIPTION>receiver.bank_account.account_number;Account Number; 20; 1232; Account Number required; 0; ALPHANUM; NL; 20;</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>004</T_INDEX>
+                        <DESCRIPTION>receiver.reason_for_sending;Purpose of Remittance; 35; 1482; Purpose of Remittance required; 0; COMBO; NL; ; ; ; 1;</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                     <GETDELIVERYOPTIONTEMPLATE>
+                        <PRODUCT>UNIVERSAL ADDRESS DLV          H2H</PRODUCT>
+                        <CATEGORY>SRIEPT</CATEGORY>
+                        <T_INDEX>005</T_INDEX>
+                        <DESCRIPTION>1; 0; 810001; Family Maintenance / Savings;</DESCRIPTION>
+                     </GETDELIVERYOPTIONTEMPLATE>
+                  </RECORDSET>
+               </DATA_CONTEXT>
+            </REPLY>
+         </MTML>
+      </xrsi:esp-das-reply>
+   </soapenv:Body>
+</soapenv:Envelope>
