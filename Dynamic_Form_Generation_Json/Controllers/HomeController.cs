@@ -132,7 +132,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                                         </div>", descriptionArray[1], descriptionArray[0], "text", placeholder, maxSizeLength, isRequired);
                         aDynamicFormDesign.AppendFormat(singlePropertyDesign);
                     }
-                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType != "doropdown" && appendDropdownItemCount == 0)
+                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType == "text" && appendDropdownItemCount == 0)
                     {
                         maxSizeLength = descriptionArray[2];
 
@@ -151,6 +151,48 @@ namespace Dynamic_Form_Generation_Json.Controllers
 
                         dropdownLabel = descriptionArray[1];
                         dropdownId = descriptionArray[0];
+                    }
+                    else if (!String.IsNullOrWhiteSpace(inputType) && inputType == "cascade")
+                    {
+                        dropdownLabel = descriptionArray[1];
+                        dropdownId = descriptionArray[0];
+
+                        switch (inputId)
+                        {
+                            case "receiver.bank_account.bank_code":
+                                var list = GetBankList();
+                                foreach (var item in list)
+                                {
+                                    option = String.Format(@"<option value='{0}'>{1}</option>", item.BankCode, item.Name);
+                                    dropdownOptionList.AppendFormat(option);
+                                }
+                                dropdownDesign = String.Format(@"<div class='form-group row'>
+                                                            <label for='{1}' class='col-sm-2 col-form-label {3}'>{0}</label>
+                                                            <div class='col-sm-10'>
+                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example' {3}>
+                                                                    <option selected>--Select--</option>
+                                                                    {2}
+                                                                </select>
+                                                            </div>
+                                                        </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired);
+                                aDynamicFormDesign.AppendFormat(dropdownDesign);
+                                break;
+                            case "receiver.bank_account.branch_code":
+                                dropdownDesign = String.Format(@"<div class='form-group row'>
+                                                            <label for='{1}' class='col-sm-2 col-form-label {2}'>{0}</label>
+                                                            <div class='col-sm-10'>
+                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example' {2}>
+                                                                    <option selected>--Select--</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>", dropdownLabel, dropdownId, isRequired);
+                                aDynamicFormDesign.AppendFormat(dropdownDesign);
+                                break;
+
+                            default:
+                                break;
+                        }
+                        dropdownOptionList = new StringBuilder();
                     }
                 }
             }
@@ -202,7 +244,6 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                 model.BeneficiaryBankBranchCode = fieldValue;
                                 break;
 
-
                             //FinalData.json
                             case "receiver.bank_account.routing_number":
                                 model.BeneficiaryBankRoutingNumber = fieldValue;
@@ -234,18 +275,32 @@ namespace Dynamic_Form_Generation_Json.Controllers
         }
 
         [HttpGet]
-        public JsonResult GetBankList()
+        public JsonResult GetBanks()
+        {
+            var list = GetBankList();
+            return Json(list);
+        }
+
+        [HttpGet]
+        public JsonResult GetBranchList(string bankCode)
+        {
+            var list = GetBranchList();
+
+            if (bankCode != null)
+                list = list.Where(a => a.BankCode == bankCode).ToList();
+
+            return Json(list);
+        }
+        public List<Bank> GetBankList()
         {
             var list = new List<Bank>() {
                 new Bank() { Name = "Brac Bank Ltd",  BankCode="BBL" },
                 new Bank() { Name = "Bank Asia Ltd", BankCode="BAL" },
                 new Bank() { Name = "United Commercial Bank Ltd", BankCode="UCBL" },
             };
-            return Json(list);
+            return list;
         }
-
-        [HttpGet]
-        public JsonResult GetBranchList(string bankCode)
+        public List<Branch> GetBranchList()
         {
             var list = new List<Branch>() {
                 new Branch() { Name = "Head Office", Code = "HO", BankCode="BBL" },
@@ -254,11 +309,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                 new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="BAL" },
                 new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="UCBL" },
             };
-
-            if (bankCode != null)
-                list = list.Where(a => a.BankCode == bankCode).ToList();
-
-            return Json(list);
+            return list;
         }
     }
 }

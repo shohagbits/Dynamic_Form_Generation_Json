@@ -31,6 +31,8 @@ namespace Dynamic_Form_Generation_Json.Data
                     return "number";
                 case "COMBO":
                     return "doropdown";
+                case "COMBO2":
+                    return "cascade";
                 default:
                     return "text";
             };
