@@ -26,8 +26,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
         {
             var readJsonData = String.Empty;
 
-            using (StreamReader r = new StreamReader("./Data/Templates/FinalData.json"))
-            //using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-LK-LKR.json"))
+            //using (StreamReader r = new StreamReader("./Data/Templates/FinalData.json"))
+            using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-LK-LKR.json"))
             //using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-IN-INR.json"))
             {
                 readJsonData = r.ReadToEnd();
@@ -233,15 +233,32 @@ namespace Dynamic_Form_Generation_Json.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public JsonResult GetBankList()
         {
-            return View();
+            var list = new List<Bank>() {
+                new Bank() { Name = "Brac Bank Ltd",  BankCode="BBL" },
+                new Bank() { Name = "Bank Asia Ltd", BankCode="BAL" },
+                new Bank() { Name = "United Commercial Bank Ltd", BankCode="UCBL" },
+            };
+            return Json(list);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpGet]
+        public JsonResult GetBranchList(string bankCode)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var list = new List<Branch>() {
+                new Branch() { Name = "Head Office", Code = "HO", BankCode="BBL" },
+                new Branch() { Name = "Dhaka Office", Code = "DO", BankCode="BBL" },
+                new Branch() { Name = "Head Office", Code = "HO", BankCode="BAL" },
+                new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="BAL" },
+                new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="UCBL" },
+            };
+
+            if (bankCode != null)
+                list = list.Where(a => a.BankCode == bankCode).ToList();
+
+            return Json(list);
         }
     }
 }
