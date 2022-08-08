@@ -199,8 +199,6 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                                             </div>
                                                         </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired, dropdownId, upcommingId);
                                     aDynamicFormDesign.AppendFormat(dropdownDesign);
-                                    //var scripts = "";
-                                    //scriptList.Append(scripts);
                                 }
                                 else
                                 {
