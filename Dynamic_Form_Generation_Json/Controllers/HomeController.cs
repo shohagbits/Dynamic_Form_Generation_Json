@@ -26,9 +26,9 @@ namespace Dynamic_Form_Generation_Json.Controllers
         {
             var readJsonData = String.Empty;
 
-            //using (StreamReader r = new StreamReader("./Data/Templates/FinalData.json"))
+            using (StreamReader r = new StreamReader("./Data/Templates/FinalData.json"))
             //using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-LK-LKR.json"))
-            using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-IN-INR.json"))
+            //using (StreamReader r = new StreamReader("./Data/Templates/DeliveryServiceTemplate-IN-INR.json"))
             {
                 readJsonData = r.ReadToEnd();
             }
@@ -161,6 +161,73 @@ namespace Dynamic_Form_Generation_Json.Controllers
         [HttpPost]
         public ActionResult DynamicForm(string formData = "")
         {
+            var model = new BeneficiaryInformation();
+            if (!String.IsNullOrWhiteSpace(formData))
+            {
+                var keyPairValues = formData.Split("&");
+                foreach (var item in keyPairValues)
+                {
+                    var fieldWithValue = item.Split("=");
+                    if (fieldWithValue.Length > 0)
+                    {
+                        var fieldName = fieldWithValue[0];
+                        var fieldValue = fieldWithValue[1];
+
+                        switch (fieldName)
+                        {
+                            //DeliveryServiceTemplate-IN-INR.json
+                            case "receiver.bank_account.name":
+                                model.BankName = fieldValue;
+                                break;
+                            case "receiver.bank_account.account_number":
+                                model.BankAccountNo = fieldValue;
+                                break;
+                            case "receiver.bank_account.bank_code":
+                                model.BankCode = fieldValue;
+                                break;
+                            case "receiver.reason_for_sending":
+                                model.ReasonForSending = fieldValue;
+                                break;
+                            case "receiver.mobile_phone.phone_number.country_code":
+                                model.BeneficiaryCountryCode = fieldValue;
+                                break;
+                            case "receiver.mobile_phone.phone_number.national_number":
+                                model.BeneficiaryMobileNo = fieldValue;
+                                break;
+
+                            //DeliveryServiceTemplate-LK-LKR.json
+                            case "receiver.bank_account.branch_code":
+                                model.BeneficiaryBankBranchCode = fieldValue;
+                                break;
+
+
+                            //FinalData.json
+                            case "receiver.bank_account.routing_number":
+                                model.BeneficiaryBankRoutingNumber = fieldValue;
+                                break;
+                            case "receiver.bank_account.account_type":
+                                model.BeneficiaryBankAccountType = fieldValue;
+                                break;
+                            case "receiver.address.addr_line1":
+                                model.BeneficiaryAddress = fieldValue;
+                                break;
+                            case "receiver.address.city":
+                                model.BeneficiaryCity = fieldValue;
+                                break;
+                            case "receiver.address.state":
+                                model.BeneficiaryState = fieldValue;
+                                break;
+                            case "receiver.address.postal_code":
+                                model.BeneficiaryPostalCode = fieldValue;
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                }
+            }
+
             return View();
         }
 
