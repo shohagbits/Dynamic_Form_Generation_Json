@@ -62,8 +62,14 @@ namespace Dynamic_Form_Generation_Json.Controllers
             var dropdownDesign = String.Empty;
             var maxSizeLength = String.Empty;
 
+            var cascadeOneLevelParent = String.Empty;
+            var cascadeTwoLevelChild = String.Empty;
+            var dropdownIdLevelOne = String.Empty;
+            var dropdownIdLevelTwo = String.Empty;
+
             StringBuilder aDynamicFormDesign = new StringBuilder();
             StringBuilder dropdownOptionList = new StringBuilder();
+            StringBuilder scriptList = new StringBuilder();
             for (int i = 0; i < recordsTemplates.Count; i++)
             {
                 var t_index = recordsTemplates[i].T_INDEX;
@@ -157,32 +163,57 @@ namespace Dynamic_Form_Generation_Json.Controllers
                         dropdownLabel = descriptionArray[1];
                         dropdownId = descriptionArray[0];
 
+                        if (String.IsNullOrWhiteSpace(cascadeOneLevelParent))
+                        {
+                            cascadeOneLevelParent = descriptionArray[11];
+                            dropdownIdLevelOne = descriptionArray[0];
+                        }
+                        else
+                        {
+                            cascadeTwoLevelChild = descriptionArray[11];
+                            dropdownIdLevelTwo = descriptionArray[0];
+                        }
+
                         switch (inputId)
                         {
                             case "receiver.bank_account.bank_code":
-                                var list = GetBankList();
-                                foreach (var item in list)
+                                if (String.IsNullOrWhiteSpace(cascadeTwoLevelChild))
                                 {
-                                    option = String.Format(@"<option value='{0}'>{1}</option>", item.BankCode, item.Name);
-                                    dropdownOptionList.AppendFormat(option);
-                                }
-                                dropdownDesign = String.Format(@"<div class='form-group row'>
+                                    int upcommingIndex = 1 + i;
+                                    var upcommingDescriptionArray = recordsTemplates[upcommingIndex].DESCRIPTION?.Split(';');
+                                    var upcommingId = upcommingDescriptionArray[0].Trim();
+
+                                    var list = GetBankList();
+                                    foreach (var item in list)
+                                    {
+                                        option = String.Format(@"<option value='{0}'>{1}</option>", item.BankCode, item.Name);
+                                        dropdownOptionList.AppendFormat(option);
+                                    }
+                                    dropdownDesign = String.Format(@"<div class='form-group row'>
                                                             <label for='{1}' class='col-sm-2 col-form-label {3}'>{0}</label>
                                                             <div class='col-sm-10'>
-                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example' {3}>
-                                                                    <option selected>--Select--</option>
+                                                                <select class='form-select form-control' id='{1}' name='{1}' onchange=getBranchList('{4}','{5}') {3}>
+                                                                    <option>--Select--</option>
                                                                     {2}
                                                                 </select>
                                                             </div>
-                                                        </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired);
-                                aDynamicFormDesign.AppendFormat(dropdownDesign);
+                                                        </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired, dropdownId, upcommingId);
+                                    aDynamicFormDesign.AppendFormat(dropdownDesign);
+                                    //var scripts = "";
+                                    //scriptList.Append(scripts);
+                                }
+                                else
+                                {
+
+                                }
                                 break;
+
                             case "receiver.bank_account.branch_code":
                                 dropdownDesign = String.Format(@"<div class='form-group row'>
                                                             <label for='{1}' class='col-sm-2 col-form-label {2}'>{0}</label>
                                                             <div class='col-sm-10'>
-                                                                <select class='form-select form-control' id='{1}' name='{1}' aria-label='Default select example' {2}>
-                                                                    <option selected>--Select--</option>
+                                                                <select class='form-select form-control' id='{1}' name='{1}' {2}>
+                                                                    <option>--Select--</option>
                                                                 </select>
                                                             </div>
                                                         </div>", dropdownLabel, dropdownId, isRequired);
@@ -197,6 +228,7 @@ namespace Dynamic_Form_Generation_Json.Controllers
                 }
             }
             ViewBag.FormDesignFields = aDynamicFormDesign.ToString();
+            ViewBag.ScriptList = scriptList.ToString();
             return View();
         }
 
@@ -303,11 +335,10 @@ namespace Dynamic_Form_Generation_Json.Controllers
         public List<Branch> GetBranchList()
         {
             var list = new List<Branch>() {
-                new Branch() { Name = "Head Office", Code = "HO", BankCode="BBL" },
-                new Branch() { Name = "Dhaka Office", Code = "DO", BankCode="BBL" },
-                new Branch() { Name = "Head Office", Code = "HO", BankCode="BAL" },
-                new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="BAL" },
-                new Branch() { Name = "Gulshan Office", Code = "GO", BankCode="UCBL" },
+                new Branch() { Name = "Head Office-BBL", Code = "HO", BankCode="BBL" },
+                new Branch() { Name = "Dhaka Office-BBL", Code = "DO", BankCode="BBL" },
+                new Branch() { Name = "Head Office-BAL", Code = "HO", BankCode="BAL" },
+                new Branch() { Name = "Gulshan Office-UCBL", Code = "GO", BankCode="UCBL" },
             };
             return list;
         }
