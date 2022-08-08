@@ -172,6 +172,8 @@ namespace Dynamic_Form_Generation_Json.Controllers
                     {
                         var fieldName = fieldWithValue[0];
                         var fieldValue = fieldWithValue[1];
+                        if (String.IsNullOrWhiteSpace(fieldValue) || String.IsNullOrWhiteSpace(fieldName))
+                            continue;
 
                         switch (fieldName)
                         {
