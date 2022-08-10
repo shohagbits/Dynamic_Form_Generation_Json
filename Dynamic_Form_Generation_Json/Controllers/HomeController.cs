@@ -199,6 +199,36 @@ namespace Dynamic_Form_Generation_Json.Controllers
                                                             </div>
                                                         </div>", dropdownLabel, dropdownId, dropdownOptionList.ToString(), isRequired, dropdownId, upcommingId);
                                     aDynamicFormDesign.AppendFormat(dropdownDesign);
+                                    var ajaxCalling = @"function getBranchList(dropdownId, upcommingId) {
+                                                            var e = document.getElementById(dropdownId);
+                                                            var bankCode = e.options[e.selectedIndex].value;
+
+                                                            var x = document.getElementById(upcommingId);
+                                                            x.options.length = 0;
+
+                                                            $.ajax({
+                                                                url: '/Home/GetBranchList',
+                                                                type: 'GET',
+                                                                data: { bankCode: bankCode },
+                                                                contentType: 'application/json; charset=utf-8',
+                                                                success: function(data) {
+                                                                    data.forEach(function(item) {
+                                                                        console.log(item.code, item.name);
+                                                                        debugger;
+
+                                                                        var x = document.getElementById(upcommingId);
+                                                                        var option = document.createElement('option');
+                                                                        option.text = item.name;
+                                                                        option.value = item.code;
+                                                                        x.add(option);
+                                                                    });
+                                                                },
+                                                                error: function() {
+                                                                    alert('error');
+                                                                }
+                                                            });
+                                                        }";
+                                    scriptList.Append(ajaxCalling);
                                 }
                                 else
                                 {
